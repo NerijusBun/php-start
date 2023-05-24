@@ -19,7 +19,9 @@
 </head>
 <body>
 <?php
-    
+    //Nupieškite kvadratą iš “*”, kurio kraštines sudaro 100 “*”. 
+    //Panaudokite css stilių, kad kvadratas ekrane atrodytų kvadratinis.
+    //Turi raudonas istrižaines.
     for ($x = 1; $x <= 100; $x++) {
         echo "<p>";
         for ($y = 1; $y <= 100; $y++) {
