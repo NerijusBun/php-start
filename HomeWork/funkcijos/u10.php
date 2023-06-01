@@ -7,4 +7,16 @@ echo '<pre>';
 //suraskite masyve mažiausią skaičių (nebūtinai pirminį) ir prie jo pridėkite 3. 
 //Vėl paskaičiuokite masyvo pirminių skaičių vidurkį ir jeigu mažesnis nei 70 viską kartokite. 
 
+$array = [];
 
+for ($i = 0; $i < 10; $i++) {
+    $subArray = [];
+
+    for ($s = 0; $s < 10; $s++) {
+        $number = rand(1, 100);
+        $subArray[] = $number;
+    }
+
+    $array[] = $subArray;
+}
+print_r($array);
