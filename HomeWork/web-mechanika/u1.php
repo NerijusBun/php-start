@@ -3,30 +3,36 @@
 //Viena nuoroda su failo vardu, o kita nuoroda su failo vardu ir GET duomenų  perdavimo metodu perduodamu kintamuoju color=1. 
 //Padaryti taip, kad paspaudus ant nuorodos su perduodamu kintamuoju fonas nusidažytų raudonai, o paspaudus ant nuorodos be perduodamo kintamojo, 
 //vėl pasidarytų juodas.
+
+
+
+
+
+
+
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Juodo fono puslapis</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U1</title>
     <style>
         body {
-            background-color: <?php echo isset($_GET['color']) && $_GET['color'] === '1' ? 'red' : 'black'; ?>;
+            background: <?= isset($_GET['color']) && $_GET['color'] == 1 ? 'crimson' : 'black' ?>;
         }
-        
         a {
-            color: white;
+            color: skyblue;
             display: block;
-            margin: 20px;
-            text-decoration: none;
-            font-size: 30px;
-            text-align: center;
-            
+            font-size: 3em;
+            padding: 40px;
         }
-    </style>
+    </style>    
 </head>
 <body>
-    <a href="?color=0">Juodas fonas</a>
-    <a href="?color=1">Raudonas fonas</a>
+    <a href="http://localhost/php-start/HomeWork/web-mechanika/u1.php?color=0">Link Black</a>
+    <a href="http://localhost/php-start/HomeWork/web-mechanika/u1.php?color=1">Link Red</a>
 </body>
 </html>
